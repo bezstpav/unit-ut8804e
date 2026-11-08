@@ -184,6 +184,11 @@ save/delete readings or start/stop recordings.
 See [examples/read_measurements.py](examples/read_measurements.py) for an
 executable example. Agents can use [SKILL.md](SKILL.md) for a concise workflow.
 
+## Manufacturer documentation
+
+See [MANUALS.md](MANUALS.md) for official user-manual links, front-panel clock
+setting and the applicability caveat for the programming-manual download.
+
 ## Development and validation
 
 ```sh

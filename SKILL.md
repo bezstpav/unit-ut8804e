@@ -8,7 +8,7 @@ description: Read and control a UNI-T UT8804E multimeter through its CP2110 USB 
 Use this repository's `ut8804e` CLI or `Meter` API. Start with [README.md](README.md)
 for installation/commands; read [PROTOCOL.md](PROTOCOL.md) when interpreting raw
 frames, units, status or stored data. Do not substitute a similar meter model's
-commands.
+commands. See [MANUALS.md](MANUALS.md) for manufacturer documents and clock-setting limits.
 
 - Install the package with `python -m pip install .`; HIDAPI is a dependency.
   Run `ut8804e list`, then select a serial or opaque HID path if several bridges exist.
