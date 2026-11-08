@@ -188,7 +188,7 @@ values remain raw with `valid:false`; no clock-accuracy claim is made.
 ## Validation limits
 
 Synthetic tests exercise every listed command encoding and receive layout.
-Hardware readout has been checked for DC voltage and frequency.
+Hardware readout has been checked for DC voltage, frequency and duty cycle.
 Other functions, function transitions, manual ranges, storage operations and all
 layout combinations have not been comprehensively validated on hardware.
 Record these distinctions when reporting results; an emitted packet or accepted
@@ -216,3 +216,6 @@ transfer timeout; Python cannot cancel an already executing native transfer.
 HIDAPI report-number and timeout semantics are described in the
 [HIDAPI API reference](https://libusb.info/hidapi/group__API.html) and
 [Python binding documentation](https://trezor.github.io/cython-hidapi/).
+
+See [dated hardware readout observations](docs/hardware_observations_2026_11_08.md)
+for captured selectors, invalid readings and a rejected function transition.

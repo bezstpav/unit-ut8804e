@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-08",
+  "scope": "Actual meter packets; offline decoder regression, not instrument-control acceptance",
+  "readings": [
+    {
+      "name": "dc_voltage",
+      "raw_frame_hex": "abcd2100020801103102f2d22941305644430000000000fed22a415644430000000000c206",
+      "function": "VDC",
+      "function_selector": 12560,
+      "primary": {
+        "value": 10.61400032043457,
+        "valid": true,
+        "status_code": 0,
+        "unit": "VDC"
+      }
+    },
+    {
+      "name": "duty_cycle",
+      "raw_frame_hex": "abcd2100020800107203b81e58422025007a000000000085dd803f6b487a00000000002d06",
+      "function": "DUTY_CYCLE",
+      "function_selector": 29200,
+      "primary": {
+        "value": 54.029998779296875,
+        "valid": true,
+        "status_code": 0,
+        "unit": "%"
+      }
+    },
+    {
+      "name": "frequency",
+      "raw_frame_hex": "abcd21000208011071038cdb803f406b487a00000000000edb803f6b487a00000000001807",
+      "function": "FREQUENCY",
+      "function_selector": 28944,
+      "primary": {
+        "value": 1.006700038909912,
+        "valid": true,
+        "status_code": 0,
+        "unit": "kHz"
+      }
+    },
+    {
+      "name": "invalid_status_3",
+      "raw_frame_hex": "abcd210002080110310200000000335644430000000000f879df405644430000000000ec04",
+      "function": "VDC",
+      "function_selector": 12560,
+      "primary": {
+        "value": null,
+        "valid": false,
+        "status_code": 3,
+        "unit": "VDC"
+      }
+    }
+  ],
+  "rejected_ack_hex": "abcd05000145529d00"
+}

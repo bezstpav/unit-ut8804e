@@ -7,7 +7,7 @@ as a dependency. No vendor runtime or USB-to-serial driver is needed.
 
 The reusable API supports live measurements, function/range requests, HOLD,
 relative and min/max controls, saved readings and recorded files. Hardware
-readout has been checked in DC voltage and frequency modes. Other formats are
+readout has been checked in DC voltage, frequency and duty-cycle modes. Other formats are
 covered by synthetic tests. Many
 control and storage operations are not yet comprehensively hardware-tested;
 a successful host write alone is never proof of a mode change.
@@ -210,3 +210,11 @@ no-bargraph and min/max/comparator/recording packets are currently fixture-teste
 hardware checks do not yet cover every layout.
 
 MIT licensed; see [LICENSE](LICENSE).
+
+## Support this project
+
+If you find this project useful, please give it a star on
+[GitHub](https://github.com/bezstpav/unit-ut8804e). It helps others discover it.
+
+See [dated hardware readout observations](docs/hardware_observations_2026_11_08.md)
+for captured selectors, invalid readings and a rejected function transition.

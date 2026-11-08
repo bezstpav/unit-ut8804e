@@ -49,3 +49,11 @@ ut8804e range auto
 Stop and report an explicit rejection, timeout, unknown status or restoration
 failure. Distinguish a synthetic test, received measurement and physically
 confirmed control when describing validation.
+
+## Live function verification
+
+Verify the primary live function and unit after any mode change. Do not treat
+a successful host write as instrument acceptance, reinterpret percent as hertz,
+or convert invalid status readings to zero. An explicit ER rejection must not
+trigger blind retries. Host receipt time does not establish sample freshness.
+See [hardware observations](docs/hardware_observations_2026_11_08.md).
