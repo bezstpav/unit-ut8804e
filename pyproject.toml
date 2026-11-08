@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unit-ut8804e"
+version = "0.1.0"
+description = "USB measurement and control for the UNI-T UT8804E digital multimeter"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["hidapi>=0.14.0"]
+license = "MIT"
+authors = [{name = "Pavel Bezstarosti"}]
+keywords = ["multimeter", "ut8804e", "uni-t", "cp2110", "hidraw"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: MacOS :: MacOS X",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.scripts]
+ut8804e = "ut8804e.cli:main"
+
+[project.urls]
+Repository = "https://github.com/bezstpav/unit-ut8804e"
+
+[tool.setuptools.packages.find]
+where = ["src"]

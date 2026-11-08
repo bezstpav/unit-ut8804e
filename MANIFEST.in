@@ -1,0 +1,4 @@
+include README.md PROTOCOL.md SKILL.md LICENSE
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include ci *.yml
